@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <!-- <div class="title">React selflearn</div>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqwR_y0mu9KMl-yHnf_b-n4J8vx8QdWDhs209WvCu4DBxhdhuT" alt=""> -->
+    <div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script type="text/babel">
+         const title=React.createElement('div',
+             {
+                 className:'title'
+             },'React selflearn');
+        //cu phap JSX
+       // const title = <div className='title'>Hello moi nguoi</div>
+        const Image=React.createElement('img',{
+            src:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqwR_y0mu9KMl-yHnf_b-n4J8vx8QdWDhs209WvCu4DBxhdhuT'
+        });
+        const App=React.createElement('div',null,title,Image);
+
+        const root=document.getElementById('root');
+        ReactDOM.render(App,root);
+</script>
+</body>
+</html>
